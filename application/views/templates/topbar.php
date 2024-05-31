@@ -42,11 +42,11 @@
         <div class="logo-box">
             <a href="#" class="logo logo-light text-center">
                 <span class="logo-sm">
-                    <img src="<?= base_url() ?>/assets/images/logo_msal_transparat.gif" alt="" height="22">
+                    <img src="<?= base_url() ?>/assets/images/pt.jjm.png" alt="" height="20">
                 </span>
                 <span class="logo-lg">
-                    <img src="<?= base_url() ?>/assets/images/logo_msal_transparat.gif" alt="" height="25">
-                    <span class="logo-lg-text-light">&nbsp;MASIS</span>
+                    <img src="<?= base_url() ?>/assets/images/pt.jjm.png" alt="" height="45">
+                    <span class="logo-lg-text-light"></span>
                 </span>
             </a>
         </div>
