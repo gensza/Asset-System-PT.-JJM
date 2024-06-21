@@ -24,7 +24,7 @@ $date_today = date('Y-m-d');
                     <li>
                         <a href="#sidebarEcommerce" data-toggle="collapse">
                             <i class="mdi mdi-archive"></i>
-                            <span> Aset </span>
+                            <span> Perangkat IT </span>
                             <span class="menu-arrow"></span>
                         </a>
                         <div class="collapse" id="sidebarEcommerce">

@@ -17,7 +17,7 @@
                     <?= form_error('notes_user', '<div class="alert alert-danger" role="alert">', '</div>'); ?>
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="page-title mb-3">Pinjam Aset</h4>
+                            <h4 class="page-title mb-3">Pinjam Perangkat IT</h4>
                             <form method="POST" action="<?= base_url('Users/trx') ?>">
                                 <div class="col-12">
                                     <div class="row">

@@ -8,7 +8,7 @@
                     <div class="page-title-box">
                         <div class="page-title-right">
                         </div>
-                        <h4 class="page-title">Data Assets</h4>
+                        <h4 class="page-title">Data Perangkat IT</h4>
                     </div>
                 </div>
             </div>
@@ -154,10 +154,10 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-sm btn-danger" onclick="cetak_report()">Cetak Report</button>
+                            <!-- <button type="submit" class="btn btn-sm btn-danger" onclick="cetak_report()">Cetak Report</button> -->
                         </div>
                     </form>
-                    <button type="button" class="btn btn-sm btn-warning mr-2" style="float: right;" onclick="cetak_qrcode()">Cetak QR-Code</button>
+                    <!-- <button type="button" class="btn btn-sm btn-warning mr-2" style="float: right;" onclick="cetak_qrcode()">Cetak QR-Code</button> -->
                     <button type="button" class="btn btn-sm btn-success mr-2" style="float: right;" onclick="cetak_excel()">Cetak Excel</button>
                 </div>
             </div>

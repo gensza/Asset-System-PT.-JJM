@@ -5,7 +5,7 @@
             <div class="col-md-6">
                 Copyright MIS &copy; <script>
                     document.write(new Date().getFullYear())
-                </script><a href=""> MSAL Group</a>
+                </script><a href=""> Juli Jaya Mandiri</a>
             </div>
         </div>
     </div>

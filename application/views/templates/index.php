@@ -30,7 +30,7 @@
                                 </div>
                             </div>
                         </div> <!-- end row-->
-                        <p class="text-muted mt-1 mb-0 text-truncate">Kategori Aset</p>
+                        <p class="text-muted mt-1 mb-0 text-truncate">Kategori Perangkat IT</p>
                     </div> <!-- end widget-rounded-circle-->
                 </div> <!-- end col-->
                 <div class="col-md-3 col-6">
@@ -47,7 +47,7 @@
                                 </div>
                             </div>
                         </div> <!-- end row-->
-                        <p class="text-muted mt-1 mb-0 text-truncate">Total Aset</p>
+                        <p class="text-muted mt-1 mb-0 text-truncate">Total Perangkat IT</p>
                     </div> <!-- end widget-rounded-circle-->
                 </div> <!-- end col-->
                 <div class="col-md-3 col-6">
@@ -65,7 +65,7 @@
                                 </div>
                             </div>
                         </div> <!-- end row-->
-                        <p class="text-muted mt-1 mb-0 text-truncate">Aset Terpakai</p>
+                        <p class="text-muted mt-1 mb-0 text-truncate">Perangkat IT Terpakai</p>
                     </div> <!-- end widget-rounded-circle-->
                 </div> <!-- end col-->
                 <div class="col-md-3 col-6">
@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                         </div> <!-- end row-->
-                        <p class="text-muted mt-1 mb-0 text-truncate">Aset Rusak</p>
+                        <p class="text-muted mt-1 mb-0 text-truncate">Perangkat IT Rusak</p>
                     </div> <!-- end widget-rounded-circle-->
                 </div> <!-- end col-->
             </div>
@@ -101,7 +101,7 @@
                                 </div>
                             </div>
                         </div> <!-- end row-->
-                        <p class="text-muted mt-1 mb-0 text-truncate">Aset Terpinjam</p>
+                        <p class="text-muted mt-1 mb-0 text-truncate">Perangkat IT Terpinjam</p>
                     </div> <!-- end widget-rounded-circle-->
                 </div> <!-- end col-->
                 <div class="col-4">
@@ -118,7 +118,7 @@
                                 </div>
                             </div>
                         </div> <!-- end row-->
-                        <p class="text-muted mt-1 mb-0 text-truncate">Assets Idle</p>
+                        <p class="text-muted mt-1 mb-0 text-truncate">Perangkat IT Idle</p>
                     </div> <!-- end widget-rounded-circle-->
                 </div> <!-- end col-->
                 <div class="col-4">
@@ -135,7 +135,7 @@
                                 </div>
                             </div>
                         </div> <!-- end row-->
-                        <p class="text-muted mt-1 mb-0 text-truncate">Aset Dikembalikan</p>
+                        <p class="text-muted mt-1 mb-0 text-truncate">Perangkat IT Dikembalikan</p>
                     </div> <!-- end widget-rounded-circle-->
                 </div> <!-- end col-->
             </div>
@@ -208,7 +208,7 @@
                                 </div>
                             </div>
                         </div> <!-- end row-->
-                        <p class="text-muted mt-1 mb-0 text-truncate">Assets Maintenance</p>
+                        <p class="text-muted mt-1 mb-0 text-truncate">Perangkat IT Maintenance</p>
                     </div> <!-- end widget-rounded-circle-->
                 </div> <!-- end col-->
             </div>
@@ -219,7 +219,7 @@
                         <div class="card-widgets">
                             <a data-toggle="collapse" href="#cardCollpase2" role="button" aria-expanded="false" aria-controls="cardCollpase2"><i class="mdi mdi-minus"></i></a>
                         </div>
-                        <h4 class="mt-0 font-16">Data Assets Berdasarkan Kategori</i></h4>
+                        <h4 class="mt-0 font-16">Data Perangkat IT Berdasarkan Kategori</i></h4>
 
                         <div class="col-12">
                             <div id="cardCollpase2" class="collapse show">
@@ -236,7 +236,7 @@
                 <div class="col-12">
                     <div class="card-box">
 
-                        <h4 class="header-title">Data Aset</h4>
+                        <h4 class="header-title">Data Perangkat IT</h4>
 
                         <table class="tablesaw table mb-0" data-tablesaw-sortable data-tablesaw-sortable-switch>
                             <thead>
@@ -300,7 +300,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="page-title mb-3">Data Peminjaman Aset</h4>
+                            <h4 class="page-title mb-3">Data Peminjaman Perangkat IT</h4>
                             <table id="basic-datatable" class="table dt-responsive nowrap w-100">
                                 <thead class="thead-light">
                                     <tr>
@@ -444,7 +444,7 @@
             options: {
                 title: {
                     display: true,
-                    text: 'SUMMARY DATA ASSETS'
+                    text: 'SUMMARY DATA PERANGKAT IT'
                 },
                 legend: {
                     display: false
