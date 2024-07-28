@@ -47,7 +47,7 @@ $date_today = date('Y-m-d');
                         <div class="collapse" id="sidebarCrm">
                             <ul class="nav-second-level">
                                 <li>
-                                    <a href="<?= base_url('DataPeminjaman') ?>">Data Peminjaman</a>
+                                    <a href="<?= base_url('DataPeminjaman') ?>">Data Peminjaman <span class="badge bg-danger text-white badge-notification"><?= $count_due_date ?></span></a>
                                 </li>
                                 <li>
                                     <a href="<?= base_url('PermintaanPeminjaman') ?>">Permintaan Peminjaman</a>
