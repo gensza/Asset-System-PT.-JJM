@@ -7,7 +7,7 @@ $date_today = date('Y-m-d');
         <!--- Sidemenu -->
         <div id="sidebar-menu">
             <ul id="side-menu">
-                <?php if ($this->session->userdata('username')) { ?>
+                <?php if ($this->session->userdata('username') && $this->session->userdata('role_id') == 1) { ?>
                     <li class="menu-title">Admin</li>
                     <li>
                         <a href="<?= base_url('Admin') ?>">
@@ -47,7 +47,7 @@ $date_today = date('Y-m-d');
                         <div class="collapse" id="sidebarCrm">
                             <ul class="nav-second-level">
                                 <li>
-                                    <a href="<?= base_url('DataPeminjaman') ?>">Data Peminjaman <span class="badge bg-danger text-white badge-notification"><?= $count_due_date ?></span></a>
+                                    <a href="<?= base_url('DataPeminjaman') ?>">Data Peminjaman <span class="badge bg-danger text-white badge-notification"><?php echo $this->db->get_where('tb_lend_assets', ['due_date <' => date('Y-m-d'), 'nama' => $this->session->userdata('name'), 'lend_status' => 1])->num_rows() ?></span></a>
                                 </li>
                                 <li>
                                     <a href="<?= base_url('PermintaanPeminjaman') ?>">Permintaan Peminjaman</a>
@@ -62,7 +62,7 @@ $date_today = date('Y-m-d');
                     <!-- <li>
                         <a href="<?= base_url('Maintenance') ?>">
                             <i class="mdi mdi-alert"></i>
-                            <span class="badge badge-danger float-right"><?= $this->db->query("SELECT id_assets FROM tb_assets WHERE status_maintenan = 0 AND tgl_jadwal_maintenan <= '$date_today' AND tgl_jadwal_maintenan != '1970-01-01' ")->num_rows(); ?> </span>
+                            <span class="badge badge-danger float-right"><?= $this->db->query("SELECT id_assets FROM tb_assets WHERE  status_maintenan = 0 AND tgl_jadwal_maintenan <= '$date_today' AND tgl_jadwal_maintenan != '1970-01-01' ")->num_rows(); ?> </span>
                             <span>Maintenance</span>
                         </a>
                     </li> -->
@@ -74,18 +74,24 @@ $date_today = date('Y-m-d');
                         </a>
                     </li>
                 <?php } ?>
-                <?php if (!$this->session->userdata('username')) { ?>
+                <?php if ($this->session->userdata('username') && $this->session->userdata('role_id') != 1) { ?>
                     <li class="menu-title">Users</li>
-                    <li>
+                    <!-- <li>
                         <a href="<?= base_url('Auth') ?>">
                             <i class="mdi mdi-login"></i>
                             <span> Admin </span>
                         </a>
-                    </li>
+                    </li> -->
                     <li>
-                        <a href="<?= base_url('Users') ?>">
+                        <a href="<?= base_url('DataPeminjaman') ?>">
                             <i class="mdi mdi-archive-arrow-down"></i>
-                            <span> Pinjam Aset </span>
+                            Pinjam Aset <span class="badge bg-danger text-white badge-notification"><?php echo $this->db->get_where('tb_lend_assets', ['due_date <' => date('Y-m-d'), 'nama' => $this->session->userdata('name'), 'lend_status' => 1])->num_rows() ?></span>
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="<?= base_url('Auth/logout') ?>">
+                            <i class="mdi mdi-logout"></i>
+                            <span> Logout </span>
                         </a>
                     </li>
                 <?php } ?>

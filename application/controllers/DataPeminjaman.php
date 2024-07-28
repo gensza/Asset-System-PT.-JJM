@@ -37,7 +37,6 @@ class DataPeminjaman extends CI_Controller
         $data['assets'] = $this->db->get()->result_array();
         $data['users_ho'] = $this->db->get('user')->result_array();
         $data['category'] = $this->db->get('tb_qty_assets')->result_array();
-        $data['count_due_date'] = $this->db->get_where('tb_lend_assets', ['due_date <' => date('Y-m-d')])->num_rows();
         $this->load->view('templates/header', $data);
         $this->load->view('templates/topbar', $data);
         $this->load->view('templates/sidebar', $data);

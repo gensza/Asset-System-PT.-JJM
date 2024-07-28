@@ -51,6 +51,7 @@ class Auth extends CI_Controller
 				// cek password, jika benar akan masuk dan set session lalu di redirect
 				if (password_verify($password, $user['password'])) {
 					$data = [
+						'name' => $user['name'],
 						'username' => $user['username'],
 						'role_id' => $user['role_id'],
 						'id_pt' => $user['id_pt']
